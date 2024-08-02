@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+  Swal.fire({
+    title: 'Apakah hari ini kamu ulang tahun?',
+    showDenyButton: true,
+    confirmButtonText: `Ya`,
+    denyButtonText: `Tidak`,
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('Selamat Ulang Tahun!', '', 'success');
+      // Lanjutkan dengan animasi dan pesan ulang tahun
+    } else if (result.isDenied) {
+      Swal.fire('Semoga harimu menyenangkan!', '', 'info');
+      // Anda bisa menambahkan aksi lain jika diperlukan
+    }
+  });
+});
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
   Swal.fire({

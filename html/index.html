@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Ulang Tahun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apakah hari ini ulang tahun?</h1>
+        <div class="buttons">
+            <button class="yes" onclick="location.href='ya/index.html'">Ya</button>
+            <button class="no">Tidak</button>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.no').addEventListener('click', () => {
+            alert('Semoga harimu menyenangkan!');
+        });
+    </script>
+</body>
+</html>
